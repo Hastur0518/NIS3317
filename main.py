@@ -1,6 +1,5 @@
 import pandas as pd
 from ucimlrepo import fetch_ucirepo
-import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import train_test_split
