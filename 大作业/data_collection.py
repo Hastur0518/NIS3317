@@ -5,8 +5,7 @@ myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["NIS3317"]
 tab = Chromium().latest_tab
 base_web="https://shanghai.anjuke.com/sale/"
-districts = ["minhang", "songjiang", "baoshan", "jiading", "xuhui","qingpu","jingan","putuo","yangpu","fengxian","huangpu","hongkou","changning",
-             "jinshan","chongming","shanghaizhoubian","pudong"]
+districts = ["minhang", "songjiang", "baoshan", "jiading", "xuhui","qingpu","jingan","putuo","pudong"]
 for district in districts:
     mycol= mydb[district]
     for page in range(1, 200):  # Adjust the range for the number of pages you want to scrape
